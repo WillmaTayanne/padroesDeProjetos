@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class PontuacaoController {
 
+	
 	public PontuacaoController(int pontos) {
-		Pontuacao ponto = new Pontuacao(); 
+		Pontuacao ponto = new Pontuacao(pontos); 
 		
 		if(pontos == 1) {
 			ponto.setPontos(100);
@@ -21,13 +22,20 @@ public class PontuacaoController {
 			ponto.getPontos();
 		}
 		
-		
 	}
 
-
-
+	
+	public String ganhou (String nome) {
+		return "ganhou!! " +nome;
+		
+	}
+	
+	public String perdeu (String nome) {
+		return "perdeu :(((( " +nome;
+	}
 	
 	
+
 }
 
 

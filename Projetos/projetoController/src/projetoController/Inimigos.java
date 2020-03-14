@@ -1,5 +1,6 @@
 package projetoController;
 
+
 public class Inimigos {
 
 	String [] x = {"Soldado de Guerrilha", "Espioes", "Exercito Inimigo"};
@@ -7,7 +8,9 @@ public class Inimigos {
 	int inteligencia;
 	int forca;
 	int estrategia;
-	
+	String nome;
+
+
 	public Inimigos (int a) {
 		
 		if(a == 1) {
@@ -16,6 +19,7 @@ public class Inimigos {
 			setInteligencia(5);
 			setForca(8);
 			setEstrategia(8);
+			setNome("Soldado de Guerrilha");
 	
 		}
 		
@@ -25,6 +29,7 @@ public class Inimigos {
 			setInteligencia(10);
 			setForca(7);
 			setEstrategia(10);
+			setNome("Espioes");
 			
 		}
 		
@@ -34,6 +39,7 @@ public class Inimigos {
 			setInteligencia(2);
 			setForca(7);
 			setEstrategia(10);
+			setNome("Exercito Inimigo");
 		}
 		
 		
@@ -72,11 +78,15 @@ public class Inimigos {
 	}
 	
 	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 	
-	
-	
-	
-	
+
 	
 
 	
